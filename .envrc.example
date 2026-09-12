@@ -1,0 +1,7 @@
+# Optional convenience for direnv users. Credentials should normally be stored
+# through `digikey-list-mcp configure`, not in this file.
+export DIGIKEY_SANDBOX=true
+export DIGIKEY_LOCALE_SITE=US
+export DIGIKEY_LOCALE_LANGUAGE=en
+export DIGIKEY_LOCALE_CURRENCY=USD
+

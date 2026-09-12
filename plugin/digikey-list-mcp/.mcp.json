@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "digikey-list-mcp": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "${PLUGIN_ROOT}/../..",
+        "run",
+        "digikey-list-mcp",
+        "serve",
+        "--transport",
+        "stdio"
+      ]
+    }
+  }
+}

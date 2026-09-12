@@ -4,7 +4,7 @@
       "command": "uv",
       "args": [
         "--directory",
-        "${PLUGIN_ROOT}/../..",
+        "/Users/stella/projects/digikeymcp",
         "run",
         "digikey-list-mcp",
         "serve",

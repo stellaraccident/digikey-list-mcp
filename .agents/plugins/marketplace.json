@@ -1,0 +1,20 @@
+{
+  "name": "digikey-list-mcp-local",
+  "interface": {
+    "displayName": "DigiKey List MCP (Local)"
+  },
+  "plugins": [
+    {
+      "name": "digikey-list-mcp",
+      "source": {
+        "source": "local",
+        "path": "./plugins/digikey-list-mcp"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

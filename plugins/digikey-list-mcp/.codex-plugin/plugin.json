@@ -1,6 +1,6 @@
 {
   "name": "digikey-list-mcp",
-  "version": "0.1.0",
+  "version": "0.1.0+codex.20260912224915",
   "description": "Search DigiKey and prepare order-ready MyLists without browser automation.",
   "author": {
     "name": "Personal"
@@ -12,7 +12,10 @@
     "longDescription": "Search live DigiKey catalog data, compare exact SKUs, and safely preview, create, update, or validate private MyLists while leaving checkout to the user.",
     "developerName": "Personal",
     "category": "Productivity",
-    "capabilities": ["Read", "Write"],
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
     "defaultPrompt": [
       "Find parts and prepare a DigiKey MyList.",
       "Revalidate my DigiKey list before I order.",

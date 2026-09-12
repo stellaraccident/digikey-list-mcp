@@ -18,7 +18,7 @@ The working name says “MCP,” but MCP is the service boundary, not the produc
 - Signed, expiring preview tokens and retry-safe add operations.
 - Automatic OAuth refresh-token rotation with Keychain/keyring storage and a mode-`0600` fallback.
 - Eleven MCP tools over local stdio or streamable HTTP, with read/write/destructive annotations.
-- A validated Codex personal-plugin bundle under `plugin/digikey-list-mcp`.
+- A validated Codex personal-plugin bundle under `plugins/digikey-list-mcp`.
 - Offline HTTP, auth, normalization, planning, CLI, pagination, and MCP discovery tests.
 
 No tool can place an order or check out.
@@ -314,12 +314,23 @@ src/
       store.py
 tests/
   unit/
-plugin/
+plugins/
   digikey-list-mcp/
     .codex-plugin/plugin.json
     .mcp.json
     skills/digikey-list-mcp/SKILL.md
 ```
+
+The repository is also a local Codex marketplace. Register and install it with:
+
+```bash
+codex plugin marketplace add /Users/stella/projects/digikeymcp
+codex plugin add digikey-list-mcp@digikey-list-mcp-local
+```
+
+After installation, start a new Codex task or use the composer’s add button to attach
+`@digikey-list-mcp` to an existing task. The plugin chip makes the bundled skill and MCP tools
+available to that task; this was verified in a running task with a live, read-only MyLists call.
 
 Provider-specific wire types must not leak into MCP results. A future `MouserClient` should implement the same internal procurement model while retaining explicit field-level provenance.
 
